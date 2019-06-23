@@ -10,7 +10,7 @@
  *   监听端口启动服务
  */
 
-var express = require('C:/Users/Peace/AppData/Roaming/npm/node_modules/express')
+var express = require('express')
 var router = require('./router')
 var bodyParser = require('body-parser')
 
@@ -19,7 +19,7 @@ var app = express()
 app.use('/node_modules/', express.static('./node_modules/'))
 app.use('/public/', express.static('./public/'))
 
-app.engine('html', require('C:/Users/Peace/AppData/Roaming/npm/node_modules/express-art-template'))
+app.engine('html', require('express-art-template'))
 
 // 配置模板引擎和 body-parser 一定要在 app.use(router) 挂载路由之前
 // parse application/x-www-form-urlencoded
