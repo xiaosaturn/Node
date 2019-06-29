@@ -417,5 +417,8 @@
       "resolved": "http://registry.npm.taobao.org/wordwrap/download/wordwrap-0.0.3.tgz",
       "version": "0.0.3"
     }
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
   }
 }
